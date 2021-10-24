@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Futura";
+    font-weight: normal; }
+  
+  .flex-center, .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  .nav-wrapper {
+    width: 1200px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 1; }
+  
+  .logo {
+    font-size: 10px;
+    background: #1D1D1D;
+    color: #FFF;
+    width: 230px;
+    height: 100%; }
+
+    .logo a{
+      color: white; 
+      text-decoration: none;
+    }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #FFF; }
+    nav a {
+      color: #B1B1B1;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      transition: color 1s ease; }
+      nav a:hover {
+        color: #1D1D1D; }
+  
+  .column-wrapper {
+    display: flex;
+    height: 100vh; }
+    .column-wrapper section {
+      display: flex; }
+  
+  .text-section {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 110px; }
+    .text-section h1 {
+      font-size: 95px;
+      width: 490px;
+      margin-bottom: 100px; }
+    .text-section p {
+      max-width: 400px;
+      line-height: 25px;
+      color: #3d3131;
+      margin-bottom: 50px;
+      letter-spacing: 1px; }
+  
+  .image-section {
+    flex: 1.5;
+    background: url(https://www.netclipart.com/pp/m/85-854132_analysis-clipart-research-analysis-analise-de-dados-vetor.png);
+    background-size: cover;
+    position: relative; }
+  
+        .row {
+          display: flex;
+        }
+        .column{
+          padding: 2.5rem;
+          align-items: center;
+        }
+    
+        .title {
+          font-size: 1.5rem;
+          position: relative;
+          text-align: center
+        }
+        
+        .title::after {
+          position: absolute;
+          content: "";
+          width: 0%;
+          height: 4px;
+          background-color: black;
+          left: 50%;
+          bottom: -10px;
+          transition: all 0.4s ease-in-out;
+        }
+        .column:hover .title::after {
+          width: 100%;
+          left: 0;
+        }
+        img {
+          filter: grayscale();
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          border: 6px solid whitesmoke;
+          box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+          margin-bottom: 1rem;
+          transition: filter 0.4s ease-in-out;
+        }
+
+        img:hover {
+          filter: none;
+        }
