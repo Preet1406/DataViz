@@ -4,9 +4,10 @@ let StocksLink = document.querySelector('#Stocks-link');
 let CovidLink = document.querySelector('#Covid-link');
 let Audio_analyzerLink = document.querySelector('#Audio_analyzer-link');
 let CryptocurrencyLink = document.querySelector('#Cryptocurrency-link');
+let Iron_oreLink = document.querySelector('#Iron_ore-link');
 let teamLink = document.querySelector('#team-link');
 
-let linkArray = [DataVizLink, WeafoLink, StocksLink, CovidLink, Audio_analyzerLink, CryptocurrencyLink, teamLink];
+let linkArray = [DataVizLink, WeafoLink, StocksLink, CovidLink, Audio_analyzerLink, CryptocurrencyLink, Iron_oreLink, teamLink];
 
 linkArray.forEach((eachLink) => {
 	eachLink.addEventListener('click', (e) => {
@@ -33,6 +34,10 @@ linkArray.forEach((eachLink) => {
 				
 			case CryptocurrencyLink:
 				fetchPage(eachLink, 'Cryptocurrency.html');
+				break;
+
+			case Iron_oreLink:
+				fetchPage(eachLink, 'ironore.html');
 				break;
 
 			case teamLink:
